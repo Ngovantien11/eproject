@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="./main.js"></script>
+    <script src="./jquery.js"></script>
+    <title>du thuyen</title>
+</head>
+
+<body>
+    <div id="logo">
+        <a class="navbar-brand" href="#"><img src="/image/yatch (2).png" alt="" style="height: 80px; width: 80px;"></a>
+        <div class="seach">
+            <div class="aa"><a href=""><img src="/icon/magnifying-glass.png" alt=""></a></div>
+            <input type="text" placeholder="Search..." id="filter-search">
+        </div>
+        <div class="icon">
+            <a href=""><img src="/icon/facebook-app-symbol.png" alt=""></a>
+            <a href=""><img src="/icon/icons8-instagram-30.png" alt=""></a>
+            <a href=""><img src="/icon/icons8-gmail-logo-50.png" alt=""></a>
+        </div>
+    </div>
+    <div class="home">
+        <div class="menu">
+            <div>
+                <li><a href="/index.html">Home</a></li>
+            </div>
+            <div>
+                <li class="dropdown"><a href="" class="dropbtn">Boat</a>
+
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="/boat/Scarlet Pearl/index.html">Scarlet Pearl</a>
+                        <a href="/boat/Spectre/index.html">Spectre</a>
+                        <a href="/boat/PlanetSolar/index.html">PlanetSolar</a>
+                        <a href="/boat/Majesty 155/index.html">Majesty 155 </a>
+                        <a href="/boat/Galaxy of Happiness/index.html">Galaxy of Happiness</a>
+                        <a href="/boat/ModCat Project L3/index.html">ModCat Project L3</a>
+                        <a href="/boat/Mars/index.html">Mars </a>
+                        <a href="/boat/Shaddai/index.html">Shaddai</a>
+                        <a href="/boat/L'amage/index.html">L'amage </a>
+                    </div>
+                </li>
+            </div>
+            <div>
+                <li class="dropdown"><a href="" class="dropbtn">Contact</a>
+                    <div class="dropdown-content">
+                        <a href="/hopdong/muaban/index.html">Boat buying</a>
+                        <a href="/hopdong/thanhtoan/index.html">Insurance</a>
+                    </div>
+                </li>
+            </div>
+            <div>
+                <li><a href="/lienhe/index.html">Contract</a></li>
+            </div>
+            <div>
+                <li><a href="">Exhibition</a></li>
+            </div>
+            <div>
+                <li><a href="">Eng</a></li>
+            </div>
+        </div>
+        <div class="login">
+            <div>
+                <div class="login-but">
+                    <button onclick="document.getElementById('id02').style.display='block'" style="width:90px;">Sign
+                        Up</button>
+                </div>
+
+                <div id="id02" class="modal">
+                    <form class="modal-content" action="/action_page.php">
+                        <span onclick="document.getElementById('id02').style.display='none'" class="close"
+                            title="Close Modal">&times;</span>
+                        <div class="container">
+                            <h1>Sign Up</h1>
+                            <hr>
+                            <label for="email"><b>Email</b></label>
+                            <input type="text" placeholder="Enter Email" name="email" required>
+
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+
+                            <label for="psw-repeat"><b>Repeat Password</b></label>
+                            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember"> Remember me
+                            </label>
+
+                            <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms &
+                                    Privacy</a>.</p>
+
+                            <div class="clearfix">
+                                <button type="button" onclick="document.getElementById('id02').style.display='none'"
+                                    class="cancelbtn">Cancel</button>
+                                <div>
+                                    <button type="submit" class="signupbtn">Sign Up</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div>
+                <div class="login-but">
+                    <button onclick="document.getElementById('id01').style.display='block'"
+                        style="width:auto;">Login</button>
+                </div>
+                <div id="id01" class="modal">
+
+                    <form class="modal-content animate" action="/action_page.php" method="post">
+                        <div class="imgcontainer">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                title="Close Modal" style="top: -23px;">&times;</span>
+                            <img src="/image/yatch (2).png" alt="Avatar" class="avatar">
+                        </div>
+
+                        <div class="container">
+                            <label for="uname"><b>Username</b></label>
+                            <input type="text" placeholder="Enter Username" name="uname" required>
+
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+
+                            <div class="login-but">
+                                <button type="submit">Login</button>
+                            </div>
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember"> Remember me
+                            </label>
+                        </div>
+
+                        <div class="container" style="background-color:#f1f1f1">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                class="cancelbtn">Cancel</button>
+                            <span class="psw">Forgot <a href="#">password?</a></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="carouselExampleControls">
+        <div class="carousel-item active">
+            <img src="/image/t1.jpg" class="d-block w-100" alt="..." id="banner">
+        </div>
+    </div>
+
+    <div class="boat-view">
+        <h1>ModCat Project L3</h1>
+        <p>ModCat Project L3 (85 m long): With a paired hull, BMT Nigel Gee's yacht is capable of crossing the ocean at a speed of over 40 knots. 
+            According to Robb Report, the "key" lies in the combination of the twin water jet engine and the diesel engine. The pair of maneuverable floating cushions on each side of the ship allow for more areas to play in the water.
+             Other entertainment spaces include a full-sized swimming pool, fire pit, and outdoor cinema.</p>
+    </div>
+
+    <div class="furniture">
+        <section>
+            <article>
+                <figure>
+                    <img src="images/Diem_danh_16_sieu_du_thuyen_xa_hoa_nhat_hanh_tinh_3.jpg" alt="">
+                    <div class="ct">
+                        <img src="images/02.jpg" alt="">
+                        <img src="images/03.jpg" alt="">
+                    </div>
+                    <p>On April 2, Robb Report magazine quoted information from BMT naval ship designer Nigel Gee that BMT design company will collaborate with a yacht designer Rob McPherson to soon launch a 2-hull yacht of the project. 
+                        Modcat L3 project. For a long time, Rob McPherson's company is one of the famous names with more than 25 years of experience in building two-hull yachts. BMT is very popular in the field of naval ships.
+                         Therefore, the combination of these two names to bring a new "super product" is understandable.
+                        Thanks to military ship technology, specifically developed from the technology of the Sea Fighter naval ship, Modcat L3 reaches a maximum speed of up to 40 knots, equivalent to 74 km / h.
+                         Although it is still inferior to the 55 knots of Sea Fighter, the above speed of Modcat L3 is too impressive for a two-body yacht with a length of 85 m like the Modcat L3.</p>
+                    <img src="images/16245994-7264399-One_of_the_bedrooms_features_a_glass_divider_behind_the_bedhead_-a-23_1563555369916.jpg" alt="">
+                    <div class="ct">
+                        <img src="images/16246054-7264399-Above_one_of_the_guest_rooms_complete_with_chunky_glass_bedside_-a-17_1563555369912.jpg" alt="">
+                        <img src="images/16246104-7264399-An_aerial_view_of_the_yacht_s_main_outside_deck_complete_with_so-a-18_1563555369913.jpg" alt="">
+                    </div>
+                    <p>Regarding the interior, due to the inherent characteristics, the interior space of 2-hull yachts is often much more cramped than that of traditional yachts. 
+                        However, thanks to its large size and drastic improvements, the Modcat L3 has an interior space comparable to that of a traditional 25m long yacht.
+                         Therefore, Modcat owners will not have to worry about cramped accommodation for their family and friends.
+                         An unmissable highlight of this superyacht is that it has space to carry a regular canoe, a speedboat twin and a two-seater seaplane.
+                         With such facilities, owners are free to enjoy the vast sea, not just limited to their yachts.</p>
+                </figure>
+            </article>
+        </section>
+        <div class="specifications">
+            <h1>Actual Specifications</h1>
+            <p>Need to know</p>
+            <div class="download sa">
+                <button type="submit">
+                    <img src="/icon/telephone-call.png" alt=""> Contact broker</button>
+            </div>
+            <div class="download">
+                <button type="submit"><img src="/icon/file.png" alt=""> Download</button>
+                <button type="submit"><img src="/icon/compare.png" alt=""> Compare</button>
+                <button type="submit"><img src="/icon/bank.png" alt=""> Save</button>
+            </div>
+            <div class="buying">
+                <h6>Asking price</h6>
+                <h3>20.000.000 EUR</h3>
+            </div>
+            <div class="buying">
+                <h6>Built</h6>
+                <h3>2015 Designed for the U.S.</h3>
+            </div>
+            <div class="buying">
+                <h6>Length</h6>
+                <h3>85m</h3>
+            </div>
+            <div class="buying">
+                <h6>Guests</h6>
+                <h3>60 in 26 cabin</h3>
+            </div>
+            <div class="buying">
+                <h6>Bathroom</h6>
+                <h3>Spacious bathroom, with standing shower, jacuzzi.</h3>
+            </div>
+            <div class="buying">
+                <img src="images/16245992-7264399-Should_guests_feel_like_belting_out_a_few_sea_shanties_with_pian-a-24_1563555369917.jpg" alt="" class="dd">
+            </div>
+        </div>
+    </div>
+
+    <div class="Actual">
+        <h1>Clear detailed actual specifications</h1>
+        <div class="Actual-buy">
+            <div class="basa">
+                <div class="bamboo">
+                    <h5>Asking price</h5>
+                    <h2>20.000.000 EUR</h2>
+                </div>
+                <div class="bamboo">
+                    <h5>Length</h5>
+                    <h2>85m</h2>
+                </div>
+            </div>
+            <div class="basa">
+                <div class="bamboo">
+                    <h5>Guests</h5>
+                    <h2>60 in 26 cabin</h2>
+                </div>
+                <div class="bamboo">
+                    <h5>Built</h5>
+                    <h2>2015 Designed for the U.S.A</h2>
+                </div>
+            </div>
+        </div>
+        <div class="asan">
+            <div class="asan-sa">
+                <div class="totoo">
+                    <h6>Maximum speed</h6>
+                    <h4>40 knots</h4>
+                </div>
+                <div class="totoo">
+                    <h6>Range</h6>
+                    <h4>4200 nm</h4>
+                </div>
+                <div class="totoo">
+                    <h6>Flag</h6>
+                    <h4>U.S.A</h4>
+                </div>
+                <div class="totoo">
+                    <h6>Lying</h6>
+                    <h4>U.S.A</h4>
+                </div>
+            </div>
+            <div class="asan-sa">
+                <div class="totoo">
+                    <h6>Beam</h6>
+                    <h4>8.2m (26.3ft)</h4>
+                </div>
+                <div class="totoo">
+                    <h6>Draft</h6>
+                    <h4>2.6m (8.ft)/h4>
+                </div>
+                <div class="totoo">
+                    <h6>Gross Tonnage</h6>
+                    <h4>399.0</h4>
+                </div>
+                <div class="totoo">
+                    <h6>Cruising speed</h6>
+                    <h4>16 knots</h4>
+                </div>
+            </div>
+            <div class="asan-sa">
+                <div class="bamboo">
+                    <h6>Class</h6>
+                    <h4>Rob McPherson's company</h4>
+                </div>
+                <div class="bamboo">
+                    <h6>Construction</h6>
+                    <h4>Hull - GRP, Superstructure - GRP,Deck - Teak</h4>
+                </div>
+            </div>
+            <div class="asan-sa">
+                <div class="totoo">
+                    <h6>Exterior Designer</h6>
+                    <h4>Rob McPherson</h4>
+                </div>
+                <div class="totoo">
+                    <h6>Interior Designer</h6>
+                    <h4>Navy BMT Nigel Gee</h4>
+                </div>
+            </div>
+            <div class="asan-sa">
+                <div class="totoo">
+                    <h6>Engines</h6>
+                    <h4>2 ×  1,930hp MTU</h4>
+                </div>
+                <div class="totoo">
+                    <h6>Propulsion</h6>
+                    <h4>run on 1,930hp . twin engines</h4>
+                </div>
+                <div class="totoo">
+                    <h6>Guests</h6>
+                    <h4>60 in 26 cabin</h4>
+                </div>
+                <div class="totoo">
+                    <h6>Jacuzzi</h6>
+                    <h4>2 Jacuzzis </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="contacts">
+        <div class="contacts-form">
+            <h1> You want to learn about yachts?</h1>
+            <div class="cus">
+                <div class="contacts-cus">
+                    <p>Contact us for more information</p>
+                    <a href="">Contact</a>
+                </div>
+                <div class="contacts-cus">
+                    <p>Several exhibitions will help you see your favorite yacht model</p>
+                    <a href="">Go to the exhibition</a>
+                </div>
+            </div>
+            <div class="contacts-icon">
+                <a href=""><img src="/icon/instar.png" alt=""></a>
+                <a href=""><img src="/icon/zalo.png" alt=""></a>
+                <a href=""><img src="/icon/messenger.png" alt=""></a>
+                <a href=""><img src="/icon/goi.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="contact">
+        <div class="ss1">
+            <div class="logo-img">
+                <img src="/image/yatch (2).png" alt="" class="one">
+            </div>
+            <div class="contact-icon">
+                <div class="phones"><img src="/icon/phone-call.png" alt=""><a href="">12345678</a></div>
+                <div class="phones"><img src="/icon/gmail.png" alt=""><a href="">fpt@gmail.com</a></div>
+                <div class="phones"><img src="/icon/pin.png" alt=""><a href="https://goo.gl/maps/f5Dzb36TpL7KS5Qe7">số
+                        8 Tôn Thất Thuyết-Mỹ Đình-Hà Nội</a>
+                </div>
+            </div>
+            <div class="icon-call">
+                <div class="ss2">
+                    <h2> Attention</h2>
+                    <div>
+                        <div><a href="">Terms of use</a></div>
+                        <div><a href="">Privacy policy</a></div>
+                        <div><a href="">Careers</a></div>
+                        <div><a href=""> Sitemap</a></div>
+                    </div>
+                </div>
+                <div class="ss2">
+                    <h2>Information</h2>
+                    <div>
+                        <div><a href="">Boat contract</a></div>
+                        <div><a href="">Insurance</a></div>
+                        <div><a href="">Buying broker</a></div>
+                        <diV><a href="">Exhibition</a></diV>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
